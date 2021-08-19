@@ -20,6 +20,7 @@ repositories {
 
 ext {
     set('springCloudVersion', "2020.0.3")
+    set('spring-integration.version', "5.5.1")
 }
 
 dependencies {
@@ -30,6 +31,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.12.4'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp'
     // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
     implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
 
